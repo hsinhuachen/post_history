@@ -1,0 +1,27 @@
+<h1><%= @post.title %></h1>
+
+<table>
+<% @versions.each do |version| %>
+<tr>
+<td><%= version.id %></td>
+<td><%= version.item_type %></td>
+<td><%= version.item_id %></td>
+<td><%= version.event %></td>
+<td>
+	<ul>
+	<% version.changeset.each do |key, value| %>
+	<li>從 <%= value[0] %> 改成 <%= value[1] %></li>
+	<% end %>
+	</ul>
+</td>
+<td>
+	<% if version.event != 'create' %>
+		
+	<% end %>
+</td>
+</tr>
+<% end %>
+</table>
+
+
+<%= link_to "Back", posts_path %>
