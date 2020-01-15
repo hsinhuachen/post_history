@@ -21,7 +21,7 @@ Trestle.resource(:posts) do
     }
       
     text_field :title
-    editor :msg
+    text_area :msg, id: "editor"
 
     concat(custom_helper({state: 'danger',heading: 'Top Secret'}) do
       post.versions.each_with_index do |version, index|

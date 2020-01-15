@@ -37,10 +37,12 @@ gem 'hirb'
 
 gem 'trestle', "~> 0.8.12"
 gem 'trestle-auth'
-gem 'trestle-tinymce'
+# gem 'trestle-tinymce'
 
 gem 'friendly_id', '~> 5.0.0'
 gem "babosa"
+gem "wysiwyg-rails"
+gem "froala-editor-sdk"
 
 # 版本管理
 gem 'paper_trail'

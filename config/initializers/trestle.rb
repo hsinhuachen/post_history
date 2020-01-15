@@ -235,4 +235,5 @@ Trestle.configure do |config|
   # config.auth.remember.cookie, ->(user) {
   #   { value: user.remember_token, expires: user.remember_token_expires_at }
   # }
+
 end

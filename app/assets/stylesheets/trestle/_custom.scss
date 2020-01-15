@@ -5,7 +5,10 @@
 // within individual partials and `import` them here, e.g.
 //
 //    @import "trestle/custom/my_custom_css";
-//
+@import "trestle/editor";
+@import "froala_editor.min";
+@import "froala_style.min";
+
 
 .flex{
 	align-items: center;
